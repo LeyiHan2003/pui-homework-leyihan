@@ -1,0 +1,160 @@
+.body{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.logo  {
+    width:400px;
+}
+
+.line {
+    border: 3px solid black;
+    margin: 30px;
+
+}
+
+.menu{
+    margin:auto;
+    font-size: 20px;
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+}
+
+.highlight-menu{
+    font-size: 20px;
+    width: 150px;
+    margin:auto;
+    text-align: center;
+    font-weight: 800;
+    color: #000;
+    background-color: yellow;
+}
+
+/* code below is for the product gallery */
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.productname {
+    font-family: Roboto;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+
+}
+
+.price {
+    font-family: Roboto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.picture {
+    width:400px;
+    border: 3px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.product{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.product:hover {
+    background-color: yellow;
+    width: 300 px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-left: 500px solid white;
+    border-right: 500px solid white;
+    box-sizing: border-box;
+}
+
+.productname:hover {
+    font-weight: 600;
+    color: #000;
+}
+
+/* code below is for the detail page */
+
+.dropdown-menu{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dropdown{
+    box-sizing: border-box;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    text-align: left;
+}
+
+
+.detail-price{
+    box-sizing: border-box;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-size:20px;
+}
+
+.add-to-cart{
+    font-weight:800;
+    font-size: 20px;
+    background-color: yellow;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+
+
+/* code below is for the shopping cart */
+
+.thumbnail{
+    width:200px;
+    border: 3px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.remove{
+    margin:auto;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 800;
+    text-decoration:underline;
+    text-align: center;
+}
+
+
+.bottom-line{
+    border: 3px solid black;
+    width: 1000 px;
+    margin: 30px
+}
+
