@@ -78,7 +78,7 @@ else{
 
 
 
-// add to cart
+// add to cart function
 
     class Roll {
         constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -101,4 +101,6 @@ function addtoCart(){
     cart.push(Product);
     console.log(cart);
 }
+
+
 

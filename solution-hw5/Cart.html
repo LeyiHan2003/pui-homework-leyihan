@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./cart.js"defer></script>
+
+  </head>
+  
+  <!-- the logo and the navigator -->
+
+  <body>
+    <div class = "header">
+      <a href="./Gallery.html"><img class="logo" src="assets/logo/logo-01.svg"></a>
+      <b class = "header-right">
+      <div class = "navigator">
+        <div id = "product-menu">
+          PRODUCTS
+        </div>
+        <p class = "highlight-cart">
+          <a href="./Cart.html" class="cart">CART</a>
+        </p>
+        <div id="cart-oval">
+          2
+        </div>
+         </div>
+    
+         <hr class ="line">
+         <div class = "title">
+           Our hand-made cinnamon rolls
+        </div>
+        </b>
+      </div>
+      
+
+
+<!-- the template for each cart item -->
+
+<div id = "rolls-in-cart">
+<template id="cart-item-template">
+<a class = "cart-items">
+
+  <img class="thumbnail" src="assets/products/original-cinnamon-roll.jpg" >
+  <div class = "cart-text">
+  <div class = "body" id = "cart-rollName">
+    Double Chocolate cinnamon roll </div>
+    <div class = "body" id = "cart-glazing"> 
+      Glazing: Sugar Milk </div>
+    <div class = "body" id = "cart-packsize">
+      Pack Size: 6 </div>
+  </div>
+    <div class = "body" id = "cart-price1"> 
+    $ 2.49  </div>
+
+    <p class="remove">
+      Remove
+    </p>
+</a>
+
+</template>
+</div>
+
+
+
+<hr class ="bottom-line">
+
+  <!-- the final price -->
+
+<div class = "cart-price">
+  <div class = "total-price-container">
+  <div class="body" id = "Total">
+    Total
+  </div>
+  <div class = "body" id = "total-price">
+    $29.94
+  </div>
+  </div>
+
+  <button class="button" id ="checkout">
+  Checkout
+  </button>
+</div>
+
+
+
+  </body>
+
+</html>
