@@ -48,12 +48,12 @@ class Roll {
         this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;
-        this.basePrice = basePrice;
-        let totalPrice = (this.basePrice + glazingPrice[this.glazing]*packSize[this.size]);
+        this.basePrice = parseFloat(basePrice);
+        let totalPrice = (this.basePrice + glazingPrice[this.glazing])*packPrice[this.size];
         this.totalPrice = totalPrice.toFixed(2);
     }
 }
-    
+
 
 const cart = [];
 
@@ -66,13 +66,14 @@ console.log(cart);
 // add new items to cart
 
 
-addtoCart("Original", "Sugar Milk", 1, rolls["Original"].basePrice);
+addtoCart("Original", "Sugar Milk", 1, rolls["Original"]["basePrice"]);
 
-addtoCart("Walnut", "Vanilla Milk", 12, rolls["Walnut"].basePrice);
+addtoCart("Walnut", "Vanilla Milk", 12, rolls["Walnut"]["basePrice"]);
 
-addtoCart("Raisin", "Sugar Milk", 3, rolls["Raisin"].basePrice);
+addtoCart("Raisin", "Sugar Milk", 3, rolls["Raisin"]["basePrice"]);
 
-addtoCart("Apple", "Original",12, rolls["Apple"].basePrice);
+addtoCart("Apple", "Original",12, rolls["Apple"]["basePrice"]);
+
 
 var totalPrices = 0;
 
@@ -127,7 +128,7 @@ function updateTotalCartPrice(){
     const TotalCartPrice = document.querySelector('#total-price');
     let calculatedPrice = 0;
     for (const item of cart){
-        eachPrice = parseFloat(item.totalPrice);
+        let eachPrice = parseFloat(item.totalPrice);
         calculatedPrice += eachPrice;
         }
 

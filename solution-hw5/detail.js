@@ -56,7 +56,7 @@ else{
    
 
 // update base price text
-const Price = rolls[rollType].basePrice
+const Price = rolls[rollType].basePrice;
 const rollPrice = document.querySelector('#price-text');
 
 if (rollType == "Original"){
@@ -74,7 +74,6 @@ if (rollType == "Original"){
 }
 else{ 
     rollImage.src='assets/products/' + rolls[rollType].imageFile} 
-
 
 
 

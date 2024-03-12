@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./detail.js"defer></script>
+
+</head>
+  
+<!-- the logo and the navigator -->
+
+<body>
+  <div class = "header">
+    <a href="./Gallery.html"><img class="logo" src="assets/logo/logo-01.svg"></a>
+    <b class = "header-right">
+    <div class = "navigator">
+      <div class = "highlight-product">
+        PRODUCTS
+      </div>
+      <p class = "cart">
+        <a href="./Cart.html" class="cart">CART</a>
+      </p>
+      <div id="cart-oval">
+        2
+      </div>
+       </div>
+  
+       <hr class ="line">
+       <div class = "title" id = "detail-title">
+         Original Cinnamon Roll
+      </div>
+      </b>
+    </div>
+
+
+    <div class = "item-detail">
+
+    <img class="detail-picture" src="assets/products/original-cinnamon-roll.jpg">
+  
+    <div class = "detail-text">
+    <div class = "body">
+        Customize our delicious, <br> hand-making cinnamons to <br> your liking!
+    </div>
+
+    <a class="dropdown-choices">
+    <div class = "body">
+        Glazing:
+    </div>
+
+    <select id="glazing-options"
+            onchange="glazingChange(this)"> 
+    </select>
+
+    <div class = "body">
+        Pack size:
+    </div>
+
+        <select id = "pack-size-options"
+          onchange="packSizeChange(this)"> 
+          <!-- options populated dynamically -->
+        </select>  
+  </a>
+
+    <div class = "detail-price">
+      <span id = "price-text">
+        $2.49
+      </span>
+        <button class="button" id = "add-to-cart" >
+        Add to Cart
+        </button>
+      </div>
+
+    </div>
+    </div>
+
+    
